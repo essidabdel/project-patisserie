@@ -1,0 +1,97 @@
+.cart {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Styles pour chaque élément du panier */
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Styles pour l'image de l'élément */
+.item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Styles pour le titre de l'élément */
+.item .titre {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Styles pour les boutons d'incrémentation et de décrémentation */
+.item .increment,
+.item .decrement {
+  font-weight: bold;
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+}
+
+/* Styles pour la quantité */
+.item .quantity {
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+/* Styles pour le bouton de suppression */
+.item .delete {
+  margin-top: 10px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Styles pour le bouton de favori */
+.item .heart {
+  margin-top: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Styles pour le prix */
+.item .price {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Styles pour la bande du total */
+.total-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* Styles pour le titre */
+h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}

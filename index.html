@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pâtisserie Moez Mahjoub</title>
+    <link rel="stylesheet" href="style1.css" />
+    <style>
+      body {
+        background-image: url("diana-polekhina-i5BY6W2ttts-unsplash.jpg");
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 style="color: #e6005c">Pâtisserie Moez Mahjoub</h1>
+      <nav>
+        <ul>
+          <li style="border: solid black 2px">
+            <a href="#accueil" style="color: black">Accueil</a>
+          </li>
+          <li><a href="#catalogue" style="color: black">Catalogue</a></li>
+          <li>
+            <a href="#contact" style="color: black">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="accueil">
+      <h2
+        style="text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black"
+      >
+        Bienvenue dans notre pâtisserie tunisienne en ligne !
+      </h2>
+
+      <p>
+        Nous proposons une large sélection de délicieux gâteaux tunisiens faits
+        maison. Commandez dès maintenant et régalez-vous avec nos produits
+        traditionnels.
+      </p>
+      <a href="#catalogue">Voir notre catalogue</a>
+    </section>
+    <img src="maria-teneva-PFVTZSqIqn0-unsplash.jpg" />
+
+    <section id="catalogue">
+      <h2>Catalogue de nos gâteaux tunisiens</h2>
+
+      <ul class="cake-list">
+        <li>
+          <h3>Baklewa</h3>
+          <img src="1.jpg" alt="Gâteau 1" />
+          <p>40pcs</p>
+          <label for="prix_gateau_1">Prix : 38dt</label>
+          <input
+            type="hidden"
+            id="prix_gateau_1"
+            name="prix_gateau_1"
+            value="38"
+          />
+          <br /><br />
+          <button onclick="ajouterAuPanier('gateau1')">
+            <h4>
+              <a href="panier.html" style="color: #fff">Aller au panier</a>
+            </h4>
+          </button>
+        </li>
+        <li>
+          <h3>Kaak Warka</h3>
+          <img src="2.jpg" alt="Gâteau 2" />
+          <p>50pcs</p>
+          <label for="prix_gateau_1">Prix :38 DT</label>
+          <input
+            type="hidden"
+            id="prix_gateau_2"
+            name="prix_gateau_2"
+            value="38"
+          />
+          <br /><br />
+          <button onclick="ajouterAuPanier('gateau2')">
+            <h4>
+              <a href="panier.html" style="color: #fff">Aller au panier</a>
+            </h4>
+          </button>
+        </li>
+        <li>
+          <h3>Bjawia</h3>
+          <img src="3.jpg" alt="Gâteau 3" />
+          <p>50pcs</p>
+          <label for="prix_gateau_3">Prix :45 DT</label>
+          <input
+            type="hidden"
+            id="prix_gateau_3"
+            name="prix_gateau_3"
+            value="45"
+          />
+          <br /><br />
+          <button onclick="ajouterAuPanier('gateau3')">
+            <h4>
+              <a href="panier.html" style="color: #fff">Aller au panier</a>
+            </h4>
+          </button>
+        </li>
+        <li>
+          <h3>Corne de gazelle</h3>
+          <img src="4.png" alt="Gâteau 4" />
+          <p>60pcs</p>
+          <label for="prix_gateau_4">Prix :38 DT</label>
+          <input
+            type="hidden"
+            id="prix_gateau_4"
+            name="prix_gateau_4"
+            value="38"
+          />
+          <br /><br />
+          <button onclick="ajouterAuPanier('gateau4')">
+            <h4>
+              <a href="panier.html" style="color: #fff">Aller au panier</a>
+            </h4>
+          </button>
+        </li>
+        <li>
+          <h3>Les Boules Des Amandes</h3>
+          <img src="5.jpg" alt="Gâteau 5" />
+          <p>60pcs</p>
+          <label for="prix_gateau_5">Prix: 38 DT</label>
+          <input
+            type="hidden"
+            id="prix_gateau_5"
+            name="prix_gateau_5"
+            value="38"
+          />
+          <br /><br />
+          <button onclick="ajouterAuPanier('gateau5')">
+            <h4>
+              <a href="panier.html" style="color: #fff">Aller au panier</a>
+            </h4>
+          </button>
+        </li>
+        <li>
+          <h3>Petit Four</h3>
+          <img src="6.jpg" alt="Gâteau 6" />
+          <p>50pcs</p>
+          <label for="prix_gateau_6">Prix: 38 DT</label>
+          <input
+            type="hidden"
+            id="prix_gateau_6"
+            name="prix_gateau_6"
+            value="38"
+          />
+          <br /><br />
+          <button onclick="ajouterAuPanier('gateau6')">
+            <h4>
+              <a href="panier.html" style="color: #fff">Aller au panier</a>
+            </h4>
+          </button>
+        </li>
+        <li>
+          <h3>Zouza</h3>
+          <img src="7.jpg" alt="Gâteau 7" />
+          <p>64pcs</p>
+          <label for="prix_gateau_7">Prix: 22 DT</label>
+          <input
+            type="hidden"
+            id="prix_gateau_7"
+            name="prix_gateau_7"
+            value="22"
+          />
+          <br /><br />
+          <button onclick="ajouterAuPanier('gateau7')">
+            <h4>
+              <a href="panier.html" style="color: #fff">Aller au panier</a>
+            </h4>
+          </button>
+        </li>
+        <li>
+          <h3>Cookies Chocolat</h3>
+          <img src="8.jpg" alt="Gâteau 8" />
+          <p>60pcs</p>
+          <label for="prix_gateau_8">Prix: 15 DT</label>
+          <input
+            type="hidden"
+            id="prix_gateau_8"
+            name="prix_gateau_8"
+            value="15"
+          />
+          <br /><br />
+          <button onclick="ajouterAuPanier('gateau8')">
+            <h4>
+              <a href="panier.html" style="color: #fff">Aller au panier</a>
+            </h4>
+          </button>
+        </li>
+        <li>
+          <h3>Cookies Vanille</h3>
+          <img src="9.jpg" alt="Gâteau 9" />
+          <p>60pcs</p>
+          <label for="prix_gateau_9">Prix: 15 DT</label>
+          <input
+            type="hidden"
+            id="prix_gateau_9"
+            name="prix_gateau_9"
+            value="15"
+          />
+          <br /><br />
+          <button onclick="ajouterAuPanier('gateau9')">
+            <h4>
+              <a href="panier.html" style="color: #fff">Aller au panier</a>
+            </h4>
+          </button>
+        </li>
+        <li>
+          <h3>Cookies Citron</h3>
+          <img src="10.jpg" alt="Gâteau 10" />
+          <p>60pcs</p>
+          <label for="prix_gateau_10">Prix: 15 DT</label>
+          <input
+            type="hidden"
+            id="prix_gateau_10"
+            name="prix_gateau_10"
+            value="15"
+          />
+          <br /><br />
+          <button onclick="ajouterAuPanier('gateau10')">
+            <h4>
+              <a href="panier.html" style="color: #fff">Aller au panier</a>
+            </h4>
+          </button>
+        </li>
+        <li>
+          <h3>Cookies Choufan</h3>
+          <img src="11.jpg" alt="Gâteau 11" />
+          <p>60pcs</p>
+          <label for="prix_gateau_8">Prix: 20 DT</label>
+          <input
+            type="hidden"
+            id="prix_gateau_11"
+            name="prix_gateau_11"
+            value="20"
+          />
+          <br /><br />
+          <button onclick="ajouterAuPanier('gateau11')">
+            <h4>
+              <a href="panier.html" style="color: #fff">Aller au panier</a>
+            </h4>
+          </button>
+        </li>
+        <li>
+          <h3>Sablé à la confiture</h3>
+          <img src="12.jpg" alt="Gâteau 12" />
+          <p>66pcs</p>
+          <label for="prix_gateau_12">Prix: 14 DT</label>
+          <input
+            type="hidden"
+            id="prix_gateau_12"
+            name="prix_gateau_12"
+            value="14"
+          />
+          <br /><br />
+          <button onclick="ajouterAuPanier('gateau12')">
+            <h4>
+              <a href="panier.html" style="color: #fff">Aller au panier</a>
+            </h4>
+          </button>
+        </li>
+        <li>
+          <h3>Biscuit Diari</h3>
+          <img src="13.jpg" alt="Gâteau 13" />
+          <p>100pcs</p>
+          <label for="prix_gateau_13">Prix: 12 DT</label>
+          <input
+            type="hidden"
+            id="prix_gateau_13"
+            name="prix_gateau_13"
+            value="12"
+          />
+          <br /><br />
+          <button onclick="ajouterAuPanier('gateau13')">
+            <h4>
+              <a href="panier.html" style="color: #fff">Aller au panier</a>
+            </h4>
+          </button>
+        </li>
+        <li>
+          <h3>Borj Anis</h3>
+          <img src="14.jpg" alt="Gâteau 14" />
+          <p>36pcs</p>
+          <label for="prix_gateau_14">Prix: 10 DT</label>
+          <input
+            type="hidden"
+            id="prix_gateau_14"
+            name="prix_gateau_14"
+            value="10"
+          />
+          <br /><br />
+          <button onclick="ajouterAuPanier('gateau14')">
+            <h4>
+              <a href="panier.html" style="color: #fff">Aller au panier</a>
+            </h4>
+          </button>
+        </li>
+        <li>
+          <h3>Palmier</h3>
+          <img src="15.jpg" alt="Gâteau 15" />
+          <p>150pcs</p>
+          <label for="prix_gateau_15">Prix: 15 DT</label>
+          <input
+            type="hidden"
+            id="prix_gateau_15"
+            name="prix_gateau_15"
+            value="15"
+          />
+          <br /><br />
+          <button onclick="ajouterAuPanier('gateau15')">
+            <h4>
+              <a href="panier.html" style="color: #fff">Aller au panier</a>
+            </h4>
+          </button>
+        </li>
+        <!-- Ajoutez ici d'autres gâteaux -->
+      </ul>
+    </section>
+    <!-- HTML -->
+    <a class="cart-button" href="panier.html">Aller au panier</a>
+
+    <section id="contact">
+      <h2>Contactez-nous</h2>
+      <form>
+        <div class="form-group">
+          <label for="nom">Nom :</label>
+          <input type="text" id="nom" name="nom" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message :</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" value="Envoyer" />
+        </div>
+      </form>
+    </section>
+    <footer>
+      <section id="contact1">
+        <div class="contact-info">
+          <img src="tel.png" alt="Icône téléphone" width="50" /><br />
+          <h3>+216 98 202 753</h3>
+        </div>
+        <div class="contact-info">
+          <img src="ic.jpg" alt="Icône email" width="100px" /><br />
+          <h3>bomoezmahjoub@gmail.com</h3>
+        </div>
+        <div class="contact-info">
+          <img src="loc.png" alt="Icône localisation" width="100px" /><br />
+          <p>Avenue Taieb Mhiri prés de l'urgence M'saken, Sousse, Tunisie</p>
+        </div>
+      </section>
+
+      <div
+        class="text-center py-3"
+        style="background-color: rgba(0, 0, 0, 0.2)"
+      >
+        <span class="text-white">Crée par</span>
+        <a class="text-white fw-bold" href="#">Essid Abdellatif</a>
+      </div>
+      <p class="text-center text-muted">
+        &copy; 2023 Pâtisserie Moez Mahjoub en ligne. Tous droits réservés.
+      </p>
+    </footer>
+  </body>
+</html>
