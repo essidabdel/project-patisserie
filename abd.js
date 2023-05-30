@@ -64,7 +64,7 @@ function incrementQuantity() {
   quantity++;
   console.log(quantity);
   var total = quantity * price;
-  console.log(total); 
+  console.log(total);
   updateTotal(this.parentNode, quantity, price, total);
   quantityElement.textContent = quantity;
   //   priceElement.textContent = total;
@@ -73,16 +73,7 @@ function incrementQuantity() {
 
 function updateTotal(container, quantity, price, total) {
   var text = document.createElement("div");
-  text.textContent =
-    "(" +
-    quantity +
-    "KG" +
-    "*" +
-    price +
-    ".000 DT" +
-    "=" +
-    total.toFixed(3) +
-    "DT)";
+  text.textContent = "Total: " + total.toFixed(3) + "DT";
   console.log(text);
   container.appendChild(text);
 }
