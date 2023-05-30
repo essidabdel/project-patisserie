@@ -11,7 +11,6 @@ var decrementButtons = document.getElementsByClassName("decrement");
 var deleteButtons = document.getElementsByClassName("delete");
 
 // Get tous les boutons heart
-var heartButtons = document.getElementsByClassName("heart");
 
 // intialiser le total prix selon les produits disponibles
 var initialTotalPrice = 0;
@@ -47,6 +46,8 @@ function updateTotal(button) {
   updateTotalPrice();
 }
 
+var heartButtons = document.getElementsByClassName("heart");
+
 // ajouter l'évennement listeners pour les boutons
 for (var i = 0; i < incrementButtons.length; i++) {
   incrementButtons[i].addEventListener("click", incrementQuantity);
@@ -54,18 +55,38 @@ for (var i = 0; i < incrementButtons.length; i++) {
   deleteButtons[i].addEventListener("click", deleteItem);
   heartButtons[i].addEventListener("click", toggleLike);
 }
-
-// fonction pour incrémenter les quantitées
 function incrementQuantity() {
   var quantityElement = this.parentNode.querySelector(".quantity");
   var quantity = parseInt(quantityElement.textContent);
+  var priceElement = this.parentNode.querySelector(".price");
+  var price = parseFloat(priceElement.textContent.substring(1));
+  console.log(price);
   quantity++;
-
+  console.log(quantity);
+  var total = quantity * price;
+  console.log(total); 
+  updateTotal(this.parentNode, quantity, price, total);
   quantityElement.textContent = quantity;
+  //   priceElement.textContent = total;
   updateTotalPrice();
 }
 
-// fonction pour incrémenter les quantitées
+function updateTotal(container, quantity, price, total) {
+  var text = document.createElement("div");
+  text.textContent =
+    "(" +
+    quantity +
+    "KG" +
+    "*" +
+    price +
+    ".000 DT" +
+    "=" +
+    total.toFixed(3) +
+    "DT)";
+  console.log(text);
+  container.appendChild(text);
+}
+
 function decrementQuantity() {
   var quantityElement = this.parentNode.querySelector(".quantity");
   var quantity = parseInt(quantityElement.textContent);
@@ -97,18 +118,10 @@ function updateTotalPrice() {
   totalPriceElement.textContent = "Total Price: $" + total.toFixed(2);
 }
 
-function toggleLike() {
-  this.classList.toggle("heart-liked");
-}
-
 window.addEventListener("DOMContentLoaded", () => {
   document.getElementById("totalPrice").textContent = "Total Price: $0.00";
   updateTotalPrice(); // Appel à la fonction pour mettre à jour le total price initial
 });
-function changeColor(button) {
-  if (button.style.backgroundColor === "red") {
-    button.style.backgroundColor = "transparent";
-  } else {
-    button.style.backgroundColor = "red";
-  }
+function toggleLike() {
+  this.classList.toggle("raoua");
 }

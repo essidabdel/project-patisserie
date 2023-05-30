@@ -95,6 +95,9 @@
   font-weight: bold;
   margin-top: 10px;
 }
+.raoua {
+  color: red;
+}
 
 /* Styles pour la bande du total */
 .total-bar {
