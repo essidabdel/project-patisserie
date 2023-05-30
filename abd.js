@@ -63,9 +63,7 @@ function incrementQuantity() {
   console.log(price);
   quantity++;
   console.log(quantity);
-  var total = quantity * price;
-  console.log(total);
-  updateTotal(this.parentNode, quantity, price, total);
+
   quantityElement.textContent = quantity;
   //   priceElement.textContent = total;
   updateTotalPrice();
