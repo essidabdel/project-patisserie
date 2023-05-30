@@ -1,3 +1,7 @@
+.heart {
+  color: black;
+}
+
 .cart {
   display: flex;
   flex-wrap: wrap;
@@ -22,6 +26,23 @@
   height: 150px;
   object-fit: cover;
   border-radius: 5px;
+}
+.button1 {
+  display: block;
+  width: 300px;
+  height: 60px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 60px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  margin: 0;
+}
+.button img {
+  width: 20px; /* Spécifiez la largeur souhaitée */
+  height: 20px; /* Spécifiez la hauteur souhaitée */
 }
 
 /* Styles pour le titre de l'élément */

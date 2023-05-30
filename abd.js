@@ -24,6 +24,28 @@ for (var i = 0; i < quantities.length; i++) {
 }
 var totalPriceElement = document.getElementById("totalPrice");
 totalPriceElement.textContent = "Total Price: $" + initialTotalPrice.toFixed(2);
+function updateTotal(button) {
+  // Sélectionnez l'élément parent (item)
+  var item = button.parentNode;
+
+  // Sélectionnez l'élément de quantité et mettez à jour sa valeur
+  var quantityElement = item.querySelector(".quantity");
+  var quantity = parseInt(quantityElement.textContent);
+
+  // Sélectionnez l'élément de prix et extrayez la première valeur
+  var priceElement = item.querySelector(".price");
+  var priceText = priceElement.textContent;
+  var firstPrice = parseFloat(priceText.substring(1, priceText.indexOf(" ")));
+
+  // Calculez le prix total
+  var totalPrice = firstPrice * quantity;
+
+  // Mettez à jour le champ de prix avec la nouvelle valeur
+  priceElement.textContent = "$" + totalPrice.toFixed(3) + " DT";
+
+  // Mettez à jour le prix total général
+  updateTotalPrice();
+}
 
 // ajouter l'évennement listeners pour les boutons
 for (var i = 0; i < incrementButtons.length; i++) {
@@ -38,6 +60,7 @@ function incrementQuantity() {
   var quantityElement = this.parentNode.querySelector(".quantity");
   var quantity = parseInt(quantityElement.textContent);
   quantity++;
+
   quantityElement.textContent = quantity;
   updateTotalPrice();
 }
@@ -78,14 +101,14 @@ function toggleLike() {
   this.classList.toggle("heart-liked");
 }
 
-// changer couleur de bouton heart
-var myButton = document.getElementById("myButton");
-
-myButton.addEventListener("click", function () {
-  myButton.classList.add("clicked");
-});
-
 window.addEventListener("DOMContentLoaded", () => {
   document.getElementById("totalPrice").textContent = "Total Price: $0.00";
   updateTotalPrice(); // Appel à la fonction pour mettre à jour le total price initial
 });
+function changeColor(button) {
+  if (button.style.backgroundColor === "red") {
+    button.style.backgroundColor = "transparent";
+  } else {
+    button.style.backgroundColor = "red";
+  }
+}
